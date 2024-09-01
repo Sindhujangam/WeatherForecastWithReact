@@ -1,0 +1,117 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(239, 244, 250);
+  margin: 0;
+}
+
+
+/* Ensure container and form elements are styled properly */
+.container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  width: 50vw;
+}
+
+/* Button styling */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Weather info styling */
+#weather-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#weather-info div {
+  margin-bottom: 10px;
+}
+
+#weather-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+
+
+
+/* Container for the input and suggestions */
+form {
+  position: relative; /* Ensure suggestions are positioned relative to the form */
+}
+
+/* Styling for the input field */
+#city-input {
+  width: 100%; /* Full width of the container */
+  padding: 10px; /* Space inside the input field */
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size for text inside the input */
+  box-sizing: border-box; /* Includes padding and border in the width */
+  margin-bottom: 10px; /* Space between input and suggestions */
+  transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
+}
+
+#city-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add subtle shadow for focus effect */
+}
+
+#city-input::placeholder {
+  color: #888; /* Placeholder text color */
+  font-style: italic; /* Italic style for placeholder text */
+}
+
+/* Styling for suggestions container */
+#suggestions {
+  border: 1px solid #ccc; /* Border for suggestions dropdown */
+  max-height: 200px; /* Maximum height of the dropdown */
+  overflow-y: auto; /* Scroll if content exceeds max height */
+  position: absolute; /* Positioning absolute to appear below input */
+  background-color: white; /* Background color of dropdown */
+  z-index: 1000; /* Ensure dropdown appears above other content */
+  width: 100%; /* Match input width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  top: calc(100% + 10px); /* Position dropdown below the input field */
+  left: 0; /* Align dropdown to the left of the input field */
+  border-radius: 4px; /* Rounded corners for dropdown */
+}
+
+/* Styling for each suggestion item */
+.suggestion-item {
+  padding: 10px; /* Padding inside each suggestion */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+}
