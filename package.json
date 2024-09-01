@@ -22,12 +22,12 @@
     "pages": "^0.0.16"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "homepage": "https://Sindhujangam.github.io/WeatherForecastWithReact",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
+  "homepage": "https://Sindhujangam.github.io/WeatherForecastWithReact/",
   "browserslist": {
     "production": [
       ">0.2%",
